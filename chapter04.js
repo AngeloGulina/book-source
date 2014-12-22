@@ -50,6 +50,13 @@ function iterateUntil(fun, check, init) {
   return ret;
 };
 
+// Adding book example, changing the last argument
+iterateUntill(function(n){ return n + n; },
+              function(n){ n <= 1024; },
+              2);
+//=> [2, 4, 8, 16, 32, 64, 128, 256, 512, 2014]
+//also see the result here: http://jsbin.com/huloge/1/edit?js,console
+
 function always(VALUE) {
   return function() {
     return VALUE;
