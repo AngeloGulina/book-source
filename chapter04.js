@@ -40,7 +40,7 @@ repeatedly(3, function() {
 
 function iterateUntil(fun, check, init) {
   var ret = [];
-  var result = fun(init);
+  var result = init;
 
   while (check(result)) {
     ret.push(result);
